@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -83,7 +83,7 @@
         <div class="container">
             <div class="hero-content text-center">
                 <div class="hero-text wow fadeIn" data-wow-delay=".8s">
-                    <h3 class="hero-title"><span>Cyprass</span> It's a responsive flat template</h3>
+                    <h3 class="hero-title"><span>APROASUR</span> It's a responsive flat template</h3>
                     <p class="hero-description">Mauris hendrerit eros ac ferment sodales</p>
                     <p class="hero-buttons">
                         <a href="#" class="btn btn-dark">
