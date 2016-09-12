@@ -57,11 +57,13 @@
                  </div><!--Navbar header End-->
                  	<nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                         <ul class="nav navbar-nav navbar-right ">
-                           	<li class="active"> <a href="#home" class="page-scroll">Inicio</a></li>
-                            <li><a href="#service" class="page-scroll" >Acerca de</a> </li>
-                            <li><a href="#portfolio"  class="page-scroll">Galería</a> </li>
-                            <li><a href="#about" class="page-scroll">Planes</a> </li>
-                            <li><a href="#team" class="page-scroll">Contacto</a> </li>
+                           	<li class="active"> <a href="#home" class="page-scroll">Home </a></li>
+                            <li><a href="#service" class="page-scroll" >Services</a> </li>
+                            <li><a href="#portfolio"  class="page-scroll">Portfolio</a> </li>
+                            <li><a href="#about" class="page-scroll">About Us </a> </li>
+                            <li><a href="#team" class="page-scroll">Our Team </a> </li>
+                            <li><a href="#blog" class="page-scroll">Blog</a> </li>
+                            <li><a href="#contact" class="page-scroll">Contact Us</a> </li>
                         </ul>
                      </nav>
                 </div><!-- /.container-fluid -->
@@ -81,12 +83,18 @@
         <div class="container">
             <div class="hero-content text-center">
                 <div class="hero-text wow fadeIn" data-wow-delay=".8s">
-                    <h3 class="hero-title"><span>APROASUR</span> Produciendo juntos</h3>
-                    <p class="hero-description">Calidad y Frescura</p>
+                    <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px ">
+<!--                    <h3 class="hero-title"><span>APROASUR</span>Produciendo juntos</h3>
+                    <p class="hero-description">Calidad y Frescura</p>-->
                     <p class="hero-buttons">
-                        <a href="#" class="btn btn-dark">
-                            <strong>Historia</strong> </i>
+                        
+<!--                        <a href="#" class="btn btn-dark">
+                            <strong>Learn More </strong> </i>
                         </a>
+                         <a href="#" class="btn btn-main featured">
+                            <strong>Join Now </strong> </i>
+                        </a>-->
+
                     </p>
                 </div><!--/ Hero text end -->
             </div><!--/ Hero content end -->
@@ -100,87 +108,46 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="feature_header text-center">
-                            <h3 class="feature_title"><b>Historia</b></h3>
-                            <h4 class="feature_sub"><div class="text-justify"><p>En los últimos años, se generó 
-                                    la Comisión Dignificadora encargada de gestionar el
-                                    asfalto de la carretera La Suiza de Turrialba-Tucurrique
-                                    (225) y arreglos a la carretera 
-                                    la cual luchó en dicho proyecto de infraestructura 
-                                    vial, junto con entidades como la Municipalidad de 
-                                    Jiménez de Cartago y el proyecto hidroeléctrico del 
-                                    Instituto Costarricense de Electricidad (ICE) en la 
-                                    zona del Congo de Tucurrique, a raíz del éxito y la 
-                                    experiencia obtenida en dicho proyecto por la comisión,
-                                    se integra posteriormente, una labor de equipo que impulsa 
-                                    la idea de generar trabajo en la zona por medio del aprovechamiento
-                                    de los recursos disponibles. Por tanto, se acuerda crear una asociación 
-                                    que integrara como mínimo a un miembro de cada una de las asociaciones y 
-                                    comunidades del cantón de Jiménez, con la idea de lograr un equilibrio y 
-                                    mayor  participación de los pueblos; se inicia por tanto las labores de 
-                                    legalización de la Asociación, por lo que para el 20 de enero del 2016 
-                                    se logra conformar bajo el marco jurídico de la Ley 218, a APROASUR 
-                                    como una asociación sin fines de lucro. <p>
-                                <p>Dicha Asociación se conforma bajo la presidencia del señor
-                                    Luis Brenes, la cual cuenta con 34 asociados activos
-                                    y con perspectiva de crecimiento a futuro. AROASUR
-                                    establece por tanto, mediante el análisis de la 
-                                    problemática existente de migración debido a falta de
-                                    fuentes de trabajo en la zona, que permitan generar 
-                                    el sustento diario y además del hecho de ser una zona
-                                    rica en tierra, vegetación y recurso hídrico, que
-                                    se impulse y desarrolle un plan agroproductivo que
-                                    permita a los campesinos generar sus propios recursos, 
-                                    por medio del cultivo de productos que puedan llegar a 
-                                    ser acopiados en un centro a establecerse en el distrito 
-                                    de Pejibaye del mismo cantón, que se encargue de regular 
-                                    la producción y comercializar los productos generados de 
-                                    los productores asociados, iniciando así con productos 
-                                    como el plátano y posteriormente con el fruto del pejibaye 
-                                    y sus derivados, así como algunos cultivos menores que sean 
-                                    compatibles con el manejo de los cultivos.</p>
-                                <p>Se inicia por tanto en la determinación de un acuerdo 
-                                    entre APROASUR y Coopejibaye R.L para establecer un 
-                                    convenio de préstamo del terreno, para la construcción 
-                                    del centro de acopio y el establecimiento de un vivero 
-                                    para la reproducción de material vegetativo. Posteriormente, 
-                                    se continúa con las labores de coordinación en un principio 
-                                    establecido como un proyecto, sin embargo, debido a la visión 
-                                    del mismo se logra ampliar la estructuración a un plan, de modo
-                                    que se lograra alcanzar las metas establecidas por la Asociación. </p></div>
-                            </h4>
+                            <h3 class="feature_title">Our <b>Services</b></h3>
+                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Iusto provident non voluptatibus animi quidem incidunt eum, eligendi doloribus dicta.</h4>
                             <div class="divider"></div>
                         </div>
                     </div>  <!-- Col-md-12 End -->
                 </div>
-                <div class="row bottom-left">
+                <div class="row">
                     <div class="main_feature text-center">
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                    <h5>Misión</h5>
-                                    <p class="text-justify">Somos una organización de productores sin fines de 
-                                        lucro de la zona sur del Reventazón, que buscamos 
-                                        reactivar la economía de la zona, identificando diferentes
-                                        alternativas productivas que se adapten a las condiciones 
-                                        agroecológicas, para insertar a los asociados y sus familias 
-                                        al trabajo de calidad, que les permita mejorar las condiciones 
-                                        de vida y contribuir a disminuir el rezago socioeconómico de la zona.</p>
+                                    <i class="fa fa-history"></i>
+                                    <h5>Lightweight</h5>
+                                    <p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>
+                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                             </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
                                     <i class="fa fa-pencil"></i>
-                                    <h5>Visión</h5>
-                                    <p class="text-justify">Una empresa asociativa líder en la prestación de 
-                                        servicios de apoyo a la producción de cultivos promisorios
-                                        en la zona, e investigación de nuevos cultivos, 
-                                        desarrollo de valor agregado, siendo así acopiados y
-                                        distribuidos para el mercado local, nacional e 
-                                        internacional, que mejoren las condiciones de 
-                                        intercambio para los productores asociados.</p>
+                                    <h5>Beautiful Typrography</h5>
+                                    <p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>
+                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                         </div> <!-- Col-md-4 Single_feature End -->
-                       
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-cog"></i>
+                                    <h5>Full time Support</h5>
+                                    <p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you wonâ€™t be outdated anytime soon. Really!! </p>
+                                    <button class="btn btn-main"> Read More</button>
+                                </div>
+                        </div> <!-- Col-md-4 Single_feature End -->
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-desktop"></i>
+                                    <h5>Ultra Responsive</h5>
+                                    <p>Shadow is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>
+                                    <button class="btn btn-main"> Read More</button>
+                                </div>
+                        </div> <!-- Col-md-4 Single_feature End -->
                         <!-- <button class="btn btn-main"> Read More</button> -->
                     </div>
             </div>  <!-- Row End -->
