@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -83,9 +83,14 @@
         <div class="container">
             <div class="hero-content text-center">
                 <div class="hero-text wow fadeIn" data-wow-delay=".8s">
+<<<<<<< HEAD
                     <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px ">
 <!--                    <h3 class="hero-title"><span>APROASUR</span>Produciendo juntos</h3>
                     <p class="hero-description">Calidad y Frescura</p>-->
+=======
+                    <h3 class="hero-title"><span>APROASUR</span> It's a responsive flat template</h3>
+                    <p class="hero-description">Mauris hendrerit eros ac ferment sodales</p>
+>>>>>>> origin/master
                     <p class="hero-buttons">
                         
 <!--                        <a href="#" class="btn btn-dark">
