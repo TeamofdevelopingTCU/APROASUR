@@ -161,8 +161,7 @@
                 <a data-filter="*"  href="#" class="active ">All</a>
                 <a data-filter=".identity"  href="#" class="">Identity</a>
                 <a data-filter=".web-design" href="#"  class="">Web Design</a>
-                <a data-filter=".graphic"  href="#" class="">Graphic</a>
-                <a data-filter=".logo"  href="#" class="">Photography</a>
+               
             </div>
             <div class="clearfix"></div>
             <div class="text-center ">
