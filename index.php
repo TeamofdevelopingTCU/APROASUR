@@ -81,16 +81,14 @@
 
             <div class="container">
                 <div class="hero-content text-center">
-                    <div class="hero-text wow fadeIn" data-wow-delay=".8s">
-                        <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px ">
+                    <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
+                        <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
 
                     </div><!--/ Hero text end -->
                 </div><!--/ Hero content end -->
             </div><!--/ Container end -->
         </section><!--/ Home end -->
-
         <!-- Service Area start -->
-
         <section id="service">
             <div class="container">
                 <div class="row">
