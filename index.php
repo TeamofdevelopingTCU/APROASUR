@@ -58,7 +58,7 @@
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right ">
                         <li class="active"> <a href="#home" class="page-scroll">Home </a></li>
-                        <li><a href="#service" class="page-scroll" >Services</a> </li>
+                        <li><a href="#service" class="page-scroll" >¿Quienes somos?</a> </li>
                         <li><a href="#portfolio"  class="page-scroll">Portfolio</a> </li>
                         <li><a href="#team" class="page-scroll">Our Team </a> </li>
                         <li><a href="#blog" class="page-scroll">Blog</a> </li>
