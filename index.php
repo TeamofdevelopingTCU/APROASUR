@@ -52,7 +52,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="background-color: #ffffff">Daylan Chavarría</h4>
+                        <h4 style="background-color: #ffffff">Daylan Chavarría UCR </h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
@@ -83,7 +83,7 @@
                 <div class="hero-content text-center">
                     <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
                         <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
-
+                           
                     </div><!--/ Hero text end -->
                 </div><!--/ Hero content end -->
             </div><!--/ Container end -->
