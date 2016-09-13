@@ -52,7 +52,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="Style/images/logo3.png" alt="" class="img-responsive">
+                        <h4 style="background-color: #ffffff">Daylan Chavarría</h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
