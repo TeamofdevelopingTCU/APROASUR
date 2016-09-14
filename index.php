@@ -148,7 +148,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="feature_header text-center">
-                            <h3 class="feature_title">Our <b>Works</b></h3>
+                            <h3 class="feature_title">Plan <b>Agro-productivo</b></h3>
                             <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
                             <div class="divider"></div>
                         </div>
@@ -158,9 +158,9 @@
 
 
             <div id="isotope-filter" class="skew3 text-center">
-                <a data-filter="*"  href="#" class="active ">All</a>
-                <a data-filter=".identity"  href="#" class="">Identity</a>
-                <a data-filter=".web-design" href="#"  class="">Web Design</a>
+                <a data-filter="*"  href="#" class="active ">Todos</a>
+                <a data-filter=".identity"  href="#" class="">I Etapa</a>
+                <a data-filter=".web-design" href="#"  class="">II Etapa</a>
                
             </div>
             <div class="clearfix"></div>
@@ -193,6 +193,7 @@
                                     <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
                                     <a href="Style/images/portfolio/p2.jpg"  data-rel="prettyPhoto">
                                         <i class="fa fa-plus"></i>
+                                        
                                     </a>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
