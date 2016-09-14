@@ -61,7 +61,7 @@
                         <li class="active"> <a href="#home" class="page-scroll">Home </a></li>
                         <li><a href="#service" class="page-scroll" >¿Quienes somos?</a> </li>
                         <li><a href="#portfolio"  class="page-scroll">Portfolio</a> </li>
-                        <li><a href="#team" class="page-scroll">Galería</a> </li>
+                        <li><a href="#team" class="page-scroll">Galería(Tavo)</a> </li>
                         <li><a href="#blog" class="page-scroll">Blog</a> </li>
                         <li><a href="#contact" class="page-scroll">Contacto</a> </li>
                     </ul>
