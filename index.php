@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
         <!--------- Gallery --------->
-        <link rel="stylesheet" href="Style/css/Gallery.css" />
+        <!--<link rel="stylesheet" href="Style/css/Gallery.css" />-->
         <!-------------------------->
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
@@ -58,17 +58,7 @@
                     <a class="navbar-brand" href="#">
                         <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
                     </a>
-                       <!--------- Prueba Log In ---------->
-                        <div>
-                            <div class="first">
-                                <ul class="nav" style="margin: 30px">
-                                    <li class="login_link">
-                                        <a href="#miModal">Iniciar sesión</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!------------------->
+                       
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right ">
@@ -83,36 +73,6 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
-        
-        
-        
-        <div>
-                <div class="first">
-                   <ul class="nav" style="margin: 30px">
-                    <li class="login_link">
-                        <a href="#miModal">Iniciar sesión</a>
-                    </li>
-                </ul>
-
-                    <div id="miModal" class="modal">
-                        <div class="modal-contenido">
-                            <a href="#">X</a>
-                            <center>
-                                <h2>Iniciar Sesion</h2>
-                
-                              <div class="div-end-Session">
-                                 bfgdfdhfdhfgh
-                              </div>
-                     </center>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-            </div>
-        
-        
         
         <section id="home" class="hero landing hero-section">
             <div class="video-background-container">
