@@ -9,6 +9,13 @@
         <meta charset="utf-8">
         <title>APROASUR</title>
         <meta name="description" content="">
+        
+        <!--------- Gallery ---------->
+        <link rel="stylesheet" href="Style/css/lightbox.min.css" />
+        
+        
+        
+        
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,9 +42,8 @@
         <link rel="stylesheet" href="Style/css/responsive.css" />
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
-        <!--------- Gallery ---------->
-        <link rel="stylesheet" href="Style/css/lightbox.min.css" />
-        <script type="text/javascript" src="Style/js/lightbox.min.js"></script>
+        
+        
         
         
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -424,12 +430,8 @@
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic1.jpg">
-                                    <div class="overlay-effect">
-                                        <p>Lwwwwworem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
-                                    </a>
+                                    
+                                    <a href="Style/images/team/pic1.jpg" data-lightbox="galeria"><img src="Style/images/team/pic1.jpg" alt="" class="img-responsive"></a>
                                 </div>
                                 <h3>John Abraham</h3>
                                 <h5>Chief Designer</h5>
@@ -837,6 +839,6 @@
             icon: "Style/images/map1.png"
         });
     </script>
-
+<script type="text/javascript" src="Style/js/lightbox.min.js"></script>
 </body>
 </html>
