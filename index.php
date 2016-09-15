@@ -413,7 +413,7 @@
                             <div class="single-member">
                                 <div class="overlay-hover">
                                     <a href="Style/images/team/pic1.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen"><img src="Style/images/team/pic1.jpg"
+                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic1.jpg"
                                         alt="" class="img-responsive"></a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
@@ -426,7 +426,7 @@
                             <div class="single-member">
                                 <div class="overlay-hover">
                                     <a href="Style/images/team/pic6.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen"><img src="Style/images/team/pic6.jpg"
+                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic6.jpg"
                                         alt="" class="img-responsive"></a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
@@ -439,7 +439,7 @@
                             <div class="single-member">
                                 <div class="overlay-hover">
                                     <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen"><img src="Style/images/team/pic3.jpg"
+                                        data-title="Titulo de la imagen" ><img src="Style/images/team/pic3.jpg"
                                         alt="" class="img-responsive"></a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
@@ -792,6 +792,6 @@
             icon: "Style/images/map1.png"
         });
     </script>
-    <script type="text/javascript" src="Style/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="Style/js/lightbox.js"></script>
 </body>
 </html>
