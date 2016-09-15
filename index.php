@@ -42,16 +42,16 @@
         <link rel="stylesheet" href="Style/css/responsive.css" />
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
-<<<<<<< HEAD
+        <<<<<<< HEAD
         <!--------- Gallery --------->
         <!--<link rel="stylesheet" href="Style/css/Gallery.css" />-->
         <!-------------------------->
-=======
+        =======
 
 
 
 
->>>>>>> PruebaGaleriaConVentanasEmergentes
+        >>>>>>> PruebaGaleriaConVentanasEmergentes
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
@@ -72,7 +72,7 @@
                     <a class="navbar-brand" href="#">
                         <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
                     </a>
-                       
+
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right ">
@@ -87,7 +87,7 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
-        
+
         <section id="home" class="hero landing hero-section">
             <div class="video-background-container">
                 <video preload="auto" autoplay loop muted class="video-background">
@@ -420,35 +420,45 @@
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
+                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
                                     <a href="Style/images/team/pic1.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic1.jpg"
-                                        alt="" class="img-responsive"></a>
+                                       data-title="Titulo de la imagen" disableScrolling="true">
+                                        <div class="overlay-effect">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                        </div>
+                                    </a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
                             </div>
                         </div>  
                         <!-- Fin Item -->
-                        
+
                         <!--Inicio Item-->
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <a href="Style/images/team/pic6.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic6.jpg"
-                                        alt="" class="img-responsive"></a>
+                                    <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
+                                    <a href="Style/images/team/pic6.jpg" data-lightbox="galeria" data-title="Titulo de la imagen">
+                                        <div class="overlay-effect">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                        </div>
+                                    </a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
                             </div>
                         </div>  
                         <!-- Fin Item -->
-                        
+
                         <!--Inicio Item-->
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" 
-                                        data-title="Titulo de la imagen" ><img src="Style/images/team/pic3.jpg"
-                                        alt="" class="img-responsive"></a>
+                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
+                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
+                                        <div class="overlay-effect">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                        </div>
+                                    </a>
                                 </div>
                                 <h3>Titulo de la imagen</h3>
                             </div>
