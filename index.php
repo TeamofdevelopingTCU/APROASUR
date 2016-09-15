@@ -9,6 +9,13 @@
         <meta charset="utf-8">
         <title>APROASUR</title>
         <meta name="description" content="">
+
+        <!--------- Gallery ---------->
+        <link rel="stylesheet" href="Style/css/lightbox.css" />
+
+
+
+
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,9 +42,16 @@
         <link rel="stylesheet" href="Style/css/responsive.css" />
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
+<<<<<<< HEAD
         <!--------- Gallery --------->
         <!--<link rel="stylesheet" href="Style/css/Gallery.css" />-->
         <!-------------------------->
+=======
+
+
+
+
+>>>>>>> PruebaGaleriaConVentanasEmergentes
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
@@ -385,6 +399,10 @@
                 </div><!-- row End -->
             </div>
         </section>
+
+
+
+        <!------------------------------ Galeria --------------------------------->
         <!-- Team MEmber Start -->
         <section id="team">
             <div class="container">
@@ -398,105 +416,50 @@
                     </div>  <!-- Col-md-12 End -->
 
                     <div id="owl-demo" class="owl-carousel owl-theme team-items">
+                        <!--Inicio Item-->
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-                                        <ul class="social list-inline">
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
+                                    <a href="Style/images/team/pic1.jpg" data-lightbox="galeria" 
+                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic1.jpg"
+                                        alt="" class="img-responsive"></a>
                                 </div>
-                                <h3>John Abraham</h3>
-                                <h5>Chief Designer</h5>
+                                <h3>Titulo de la imagen</h3>
                             </div>
-                        </div>  <!-- item wrapper end -->
+                        </div>  
+                        <!-- Fin Item -->
+                        
+                        <!--Inicio Item-->
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-                                        <ul class="social list-inline">
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
+                                    <a href="Style/images/team/pic6.jpg" data-lightbox="galeria" 
+                                        data-title="Titulo de la imagen" disableScrolling="true"><img src="Style/images/team/pic6.jpg"
+                                        alt="" class="img-responsive"></a>
                                 </div>
-                                <h3>John Abraham</h3>
-                                <h5>Chief Designer</h5>
+                                <h3>Titulo de la imagen</h3>
                             </div>
-                        </div>  <!-- item wrapper end -->
+                        </div>  
+                        <!-- Fin Item -->
+                        
+                        <!--Inicio Item-->
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <img src="Style/images/team/pic2.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-                                        <ul class="social list-inline">
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
+                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" 
+                                        data-title="Titulo de la imagen" ><img src="Style/images/team/pic3.jpg"
+                                        alt="" class="img-responsive"></a>
                                 </div>
-                                <h3>John Abraham</h3>
-                                <h5>Chief Designer</h5>
+                                <h3>Titulo de la imagen</h3>
                             </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic5.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-                                        <ul class="social list-inline">
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
-                                </div>
-                                <h3>John Abraham</h3>
-                                <h5>Chief Designer</h5>
-                            </div>
-                        </div>  <!-- item wrapper end -->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic4.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-                                        <ul class="social list-inline">
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                    </div>
-                                </div>
-                                <h3>John Abraham</h3>
-                                <h5>Chief Designer</h5>
-                            </div>
-                        </div>  <!-- item wrapper end -->
+                        </div>  
+                        <!-- Fin Item -->
+
                     </div>
                 </div>
             </div> <!-- Conatiner Team end -->
         </section>  <!-- Section TEam End -->
+        <!------------------------ Fin de la galeria -------------------------------->
 
         <!-- Our Team Members End -->
         <div class="clearfix"></div>
@@ -837,6 +800,6 @@
             icon: "Style/images/map1.png"
         });
     </script>
-
+    <script type="text/javascript" src="Style/js/lightbox.js"></script>
 </body>
 </html>
