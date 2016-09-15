@@ -18,7 +18,7 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="Style/css/bootstrap.min.css"/>
         <!-- FontAwesome -->
-        
+
         <link rel="stylesheet" href="Style/css/font-awesome.min.css"/>
         <!-- Animation -->
         <link rel="stylesheet" href="Style/css/animate.css" />
@@ -35,6 +35,9 @@
         <link rel="stylesheet" href="Style/css/responsive.css" />
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
+        <!--------- Gallery --------->
+        <link rel="stylesheet" href="Style/css/Gallery.css" />
+        <!-------------------------->
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
@@ -55,6 +58,17 @@
                     <a class="navbar-brand" href="#">
                         <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
                     </a>
+                       <!--------- Prueba Log In ---------->
+                        <div>
+                            <div class="first">
+                                <ul class="nav" style="margin: 30px">
+                                    <li class="login_link">
+                                        <a href="#miModal">Iniciar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!------------------->
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right ">
@@ -69,6 +83,37 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
+        
+        
+        
+        <div>
+                <div class="first">
+                   <ul class="nav" style="margin: 30px">
+                    <li class="login_link">
+                        <a href="#miModal">Iniciar sesión</a>
+                    </li>
+                </ul>
+
+                    <div id="miModal" class="modal">
+                        <div class="modal-contenido">
+                            <a href="#">X</a>
+                            <center>
+                                <h2>Iniciar Sesion</h2>
+                
+                              <div class="div-end-Session">
+                                 bfgdfdhfdhfgh
+                              </div>
+                     </center>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+        
+        
+        
         <section id="home" class="hero landing hero-section">
             <div class="video-background-container">
                 <video preload="auto" autoplay loop muted class="video-background">
@@ -84,7 +129,7 @@
                 <div class="hero-content text-center">
                     <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
                         <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
-                           
+
                     </div><!--/ Hero text end -->
                 </div><!--/ Hero content end -->
             </div><!--/ Container end -->
@@ -162,7 +207,7 @@
                 <a data-filter="*"  href="#" class="active ">All</a>
                 <a data-filter=".identity"  href="#" class="">Identity</a>
                 <a data-filter=".web-design" href="#"  class="">Web Design</a>
-               
+
             </div>
             <div class="clearfix"></div>
             <div class="text-center ">
