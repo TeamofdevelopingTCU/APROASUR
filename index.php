@@ -62,7 +62,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
+                        <h4 style="color: #fff; font-size: 25px">APROASUR</h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
