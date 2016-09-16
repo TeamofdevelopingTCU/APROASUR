@@ -12,12 +12,11 @@ class Program {
     public $stage;
     public $idPlan;
     
-    public function Program($idProgram, $name, $description, $stage, $idPlan){
+    public function Program($idProgram, $name, $description, $stage){
         $this->idProgram = $idProgram;
         $this->name = $name;
         $this->description = $description;
         $this->stage = $stage;
-        $this->idPlan = $idPlan;
     }
     
 }
