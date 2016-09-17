@@ -1,10 +1,6 @@
 <?php
 
 class Data {
-    
-    /*super clase de los data*/
-    
-    /* atributos */
     public $server;
     public $user;
     public $password;
@@ -20,8 +16,6 @@ class Data {
         $this->user = "root";
         $this->password = "";
         $this->db = "aproasur_db";
-    }
-    
+    }  
 }
-
 ?>

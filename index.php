@@ -18,7 +18,7 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="Style/css/bootstrap.min.css"/>
         <!-- FontAwesome -->
-        
+
         <link rel="stylesheet" href="Style/css/font-awesome.min.css"/>
         <!-- Animation -->
         <link rel="stylesheet" href="Style/css/animate.css" />
@@ -38,6 +38,16 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+        <!--inclusions and instances-->
+        <!--inclusions-->
+        <?php
+        include './Business/OrganizationBusiness.php';
+        ?>
+        <!--instances-->
+        <?php
+        $organizationBusiness = new OrganizationBusiness();
+        $organization = $organizationBusiness->getOrganization();
+        ?>
     </head>
 
     <body data-spy="scroll" data-target=".navbar-fixed-top">
@@ -53,7 +63,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
+                        <h4 style="color: #fff; font-size: 25px">APROASUR</h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
@@ -84,19 +94,21 @@
                 <div class="hero-content text-center">
                     <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
                         <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
-                           
+
                     </div><!--/ Hero text end -->
                 </div><!--/ Hero content end -->
             </div><!--/ Container end -->
         </section><!--/ Home end -->
-        <!-- Service Area start -->
-        <section id="service">
-            <div class="container">
+        <!-- ABOUT US -->
+        <section id="service" style="background-color: #CEF6EC">
+            <div class="container" >
                 <div class="row">
                     <div class="col-md-12">
                         <div class="feature_header text-center">
-                            <h3 class="feature_title">Our <b>Services</b></h3>
-                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Iusto provident non voluptatibus animi quidem incidunt eum, eligendi doloribus dicta.</h4>
+                            <h3 class="feature_title">APROASUR <b>Costa Rica</b></h3>
+                            <h4 class="feature_sub">
+                                <?php echo substr($organization->history, 0, 667); ?> 
+                            </h4>
                             <div class="divider"></div>
                         </div>
                     </div>  <!-- Col-md-12 End -->
@@ -105,34 +117,35 @@
                     <div class="main_feature text-center">
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-history"></i>
-                                <h5>Lightweight</h5>
-                                <p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class=" glyphicon glyphicon-flag"></i>
+                                <h5>Misión</h5>
+                                <!--<p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>-->
+                                <p><?php echo substr($organization->mission, 0, 102) . '...'; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->mission, 0, 1100) . "','" . "Misión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-pencil"></i>
-                                <h5>Beautiful Typrography</h5>
-                                <p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-eye"></i>
+                                <h5>Visión</h5>
+                                <p><?php echo substr($organization->view, 0, 113) . '...'; ?></p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->view, 0, 1100) . "','" . "Visión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-cog"></i>
-                                <h5>Full time Support</h5>
-                                <p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you wonâ€™t be outdated anytime soon. Really!! </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-history"></i>
+                                <h5>Historia</h5>
+                                <p><?php echo substr($organization->history, 0, 95) . '...'; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->history, 0, 667) . "','" . "Historia" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-desktop"></i>
-                                <h5>Ultra Responsive</h5>
-                                <p>Shadow is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-users "></i>
+                                <h5>Comisión</h5>
+                                <p><?php echo substr($organization->comission, 0, 90) . "..."; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->comission, 0, 800) . "','" . "Comisión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <!-- <button class="btn btn-main"> Read More</button> -->
@@ -140,8 +153,26 @@
                 </div>  <!-- Row End -->
             </div>  <!-- Container End -->
         </section>
-        <!-- Service Area End -->
-
+        <!-- About Us Area End -->
+        <!-- Modal for more information in about us-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">#</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-message">#</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
         <!-- Portfolio works Start -->
 
         <section id="portfolio">
@@ -812,7 +843,14 @@
     <!-- Custom js -->
     <script src="Style/js/custom.js"></script>
     <script>
-        // Google Map - with support of gmaps.js
+        //function to update the information modal.
+        function modalSelect(modalMessage, modalTitle) {
+            document.getElementsByClassName("modal-title")[0].textContent = modalTitle;
+            document.getElementsByClassName("modal-message")[0].textContent = modalMessage;
+        }
+        ;
+    </script>
+    <script>
         var map;
         map = new GMaps({
             div: '#map',
