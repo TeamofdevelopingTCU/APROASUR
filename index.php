@@ -40,6 +40,20 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
         <!--inclusions and instances-->
         <!--inclusions-->
+        
+        <!--Daylan Carousel-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        </style>
+        
         <?php
             include './Business/OrganizationBusiness.php';
             include './Business/PlanBusiness.php';
@@ -54,7 +68,7 @@
 
     <body data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner">
+        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner" style="background-color: #A48300">
             <div class="container">
                 <!-- <div class="row"> -->
                 <div class="navbar-header ">
@@ -65,7 +79,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="color: #fff; font-size: 25px">APROASUR</h4>
+                        <h4 style="color: #fff; font-size: 20px">APROASUR</h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
@@ -81,26 +95,36 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
-        <section id="home" class="hero landing hero-section">
-            <div class="video-background-container">
-                <video preload="auto" autoplay loop muted class="video-background">
-                    <source type="video/mp4" src="Style/videos/gdrive.mp4" />
-                    <source type="video/ogg" src="Style/videos/gdrive.ogv" />
-                    <source type="video/webm" src="Style/videos/gdrive.webm" />
-                </video>
-            </div> 
+         <div  id="home" class="container">
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top: 5%">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+                </ol>
 
-            <div class="parallax-overlay"></div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="border: 25px">
+                    <div class="item active" >
+                        <img src="Style/images/carrusel/logo.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                        <h2></h2>
+                    </div>
 
-            <div class="container">
-                <div class="hero-content text-center">
-                    <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
-                        <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.png" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
 
-                    </div><!--/ Hero text end -->
-                </div><!--/ Hero content end -->
-            </div><!--/ Container end -->
-        </section><!--/ Home end -->
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
+                </div>
+
+            </div>
+            <br/>
+        </div>
         <!-- ABOUT US -->
         <section id="service" style="background-color: #CEF6EC">
             <div class="container" >
@@ -691,23 +715,23 @@
     </div>
     <!-- Footer Area Start -->
 
-    <div class="footer_b">
+    <div class="footer_b" style="background-color: #A48300">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="footer_bottom">
-                        <p class="text-block"> &copy; Copyright reserved to <span>Cyprass </span></p>
+                        <p class="text-block"> &copy; Copyright reserved to APROASUR</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="footer_mid pull-right">
                         <ul class="social-contact list-inline">
                             <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+<!--                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>-->
                             <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+<!--                        <li><a href="#"> <i class=""></i></a></li>
+                            <li><a href="#"> <i class=""></i></a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -733,7 +757,7 @@
 
 
 
-<<<<<<< HEAD
+
     <!-- Javascript Files
         ================================================== -->
     <!-- initialize jQuery Library -->
@@ -795,7 +819,7 @@
             icon: "Style/images/map1.png"
         });
     </script>
-=======
+
 <!-- Javascript Files
     ================================================== -->
 <!-- initialize jQuery Library -->
@@ -833,8 +857,8 @@
     var map;
     map = new GMaps({
         div: '#map',
-        lat: 23.709921,
-        lng: 90.407143,
+        lat: 9.812458,
+        lng: -83.702979,
         scrollwheel: false,
         panControl: false,
         zoomControl: false,
@@ -850,7 +874,7 @@
         icon: "Style/images/map1.png"
     });
 </script>
->>>>>>> michael
+
 
 </body>
 </html>
