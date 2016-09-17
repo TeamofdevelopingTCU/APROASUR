@@ -10,11 +10,6 @@
         <title>APROASUR</title>
         <meta name="description" content="">
 
-        <!--------- Gallery ---------->
-        <link rel="stylesheet" href="Style/css/lightbox.css" />
-
-
-
 
         <!-- Mobile Specific Metas
     ================================================== -->
@@ -42,16 +37,6 @@
         <link rel="stylesheet" href="Style/css/responsive.css" />
         <link rel="stylesheet" href="Style/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
-        <<<<<<< HEAD
-        <!--------- Gallery --------->
-        <!--<link rel="stylesheet" href="Style/css/Gallery.css" />-->
-        <!-------------------------->
-        =======
-
-
-
-
-        >>>>>>> PruebaGaleriaConVentanasEmergentes
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
@@ -420,129 +405,15 @@
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
-                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic1.jpg" data-lightbox="galeria" 
-                                       data-title="Titulo de la imagen" disableScrolling="true">
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
                                     <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic6.jpg" data-lightbox="galeria" data-title="Titulo de la imagen">
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
+                                    <div class="overlay-effect">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
                                 </div>
-                                <h3>Titulo de la imagen</h3>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
                             </div>
-                        </div>  
-                        <!-- Fin Item -->
-
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-                        
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-                        
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-                        
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-                        
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
-                        <!-- Fin Item -->
-                        
-                        <!--Inicio Item-->
-                        <div class="item text-center">
-                            <div class="single-member">
-                                <div class="overlay-hover">
-                                    <img src="Style/images/team/pic3.jpg" alt="" class="img-responsive">
-                                    <a href="Style/images/team/pic3.jpg" data-lightbox="galeria" data-title="Titulo de la imagen" >
-                                        <div class="overlay-effect">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <h3>Titulo de la imagen</h3>
-                            </div>
-                        </div>  
+                        </div>  <!-- item wrapper end -->
                         <!-- Fin Item -->
 
                     </div>
@@ -890,6 +761,5 @@
             icon: "Style/images/map1.png"
         });
     </script>
-    <script type="text/javascript" src="Style/js/lightbox.js"></script>
 </body>
 </html>
