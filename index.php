@@ -9,7 +9,10 @@
         <meta charset="utf-8">
         <title>APROASUR</title>
         <meta name="description" content="">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1c94116ec1a08be327e89ba50ba46bced4184a23
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -362,6 +365,7 @@
                 </div><!-- row End -->
             </div>
         </section>
+
         
         <!------------------------------- Galeria ----------------------------------->
         <!-- Team MEmber Start -->
@@ -378,14 +382,13 @@
 
                     <div id="owl-demo" class="owl-carousel owl-theme team-items">
 
+
                         <!--Inicio Item-->
 
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
                                     <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
-                                    <div class="overlay-effect">
-
 
                                         <ul class="social list-inline">
                                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -833,7 +836,10 @@
         });
     </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1c94116ec1a08be327e89ba50ba46bced4184a23
 
     <!-- Javascript Files
         ================================================== -->
@@ -891,6 +897,9 @@
     </script>
 
 
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1c94116ec1a08be327e89ba50ba46bced4184a23
 </body>
 </html>

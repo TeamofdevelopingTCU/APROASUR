@@ -4,9 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <file>file:/C:/Users/Gustavo/Documents/Xampp/htdocs/APROASUR/index.php</file>
             <file>file:/C:/Users/Gustavo/Documents/Xampp/htdocs/APROASUR/Style/js/owl.carousel.min.js</file>
 =======
+=======
+>>>>>>> 1c94116ec1a08be327e89ba50ba46bced4184a23
             <file>file:/C:/xampp/htdocs/APROASUR/Data/Data.php</file>
             <file>file:/C:/xampp/htdocs/APROASUR/Domain/Plan.php</file>
             <file>file:/C:/xampp/htdocs/APROASUR/Data/OrganizationData.php</file>
@@ -17,7 +20,10 @@
 >>>>>>> michael
             <file>file:/C:/xampp/htdocs/APROASUR/index.php</file>
             <file>file:/C:/xampp/htdocs/APROASUR/Business/PlanBusiness.php</file>
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1c94116ec1a08be327e89ba50ba46bced4184a23
         </group>
     </open-files>
 </project-private>
