@@ -200,76 +200,52 @@
 
             <div id="isotope-filter" class="skew3 text-center">
                 <a data-filter="*"  href="#" class=" ">Todos</a>
-                <a data-filter=".identity"  href="#" class="">I Etapa</a>
-                <a data-filter=".web-design" href="#"  class="">II Etapa</a>               
+                <a data-filter=".Ietapa"  href="#" class="">I Etapa</a>
+                <a data-filter=".IIetapa" href="#"  class="">II Etapa</a>               
             </div>
             <div class="clearfix"></div>
             <div class="text-center ">
                 <ul class="portfolio-wrap" id="portfolio_items">
-
                     <?php
-                    $programBusiness = new ProgramBusiness();
-                    $resultProgramI = $programBusiness->getInformationProgramI();
-                    foreach ($resultProgramI as $currentProgramI) {
-                        echo '
-                            <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio identity ">
-                                <figure>
-                                    <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
-                                    <figcaption>
-                                        <p class="links">                                    
-                                             <a data-toggle="modal" data-target="#info'.$currentProgramI->idProgram .'"> 
-                                                <i class="fa fa-link"></i></a>                                        
-                                        </p>
-                                         <p style="color: #ffffff;">' . $currentProgramI->name . '</p>
-                                    
-                                    </figcaption>
-                                </figure>    
-                            </li>';
-                    }
+                        $programBusiness = new ProgramBusiness();
+                        $resultProgramI = $programBusiness->getInformationProgramI();
+                        foreach ($resultProgramI as $currentProgramI) {
+                    ?>                        
+                        <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio Ietapa ">
+                            <figure>
+                                <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
+                                <figcaption>
+                                    <p class="links">                 
+                                        <button onclick=" <?php echo "modalSelect( '". $currentProgramI->description . "','"  . $currentProgramI->name ."' )"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">
+                                            <i class="fa fa-link"></i></button>                                        
+                                    </p>
+                                     <p style="color: #ffffff;"> <?php echo  $currentProgramI->name ; ?> </p>                                    
+                                </figcaption>
+                            </figure>    
+                        </li>
+                    <?php }
                     $resultProgramII = $programBusiness->getInformationProgramII();
                     foreach ($resultProgramII as $currentProgramII) {
-                        echo '
-                            <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio web-design">
-                                <figure>
-                                    <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
-                                    <figcaption>
-                                        <p class="links">                                    
-                                            <a data-toggle="modal" data-target="#info'.$currentProgramII->idProgram .'"> 
-                                                <i class="fa fa-link"></i></a>                                        
-                                        </p>
-                                         <p style="color: #ffffff;">' . $currentProgramII->name . '</p>
-                                    </figcaption>
-                                </figure>      
-                            </li>';
-                        array_push($resultProgramI, $currentProgramII);
+                    ?>                   
+                        <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio IIetapa ">
+                            <figure>
+                                <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
+                                <figcaption>
+                                    <p class="links">                 
+                                        <button onclick=" <?php echo "modalSelect( '". $currentProgramII->description . "','"  . $currentProgramII->name ."' )"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">
+                                            <i class="fa fa-link"></i></button>                                        
+                                    </p>
+                                     <p style="color: #ffffff;"><?php echo  $currentProgramII->name ;  ?> </p>                                    
+                                </figcaption>
+                            </figure>    
+                        </li>
+                    <?php    
                     }
                     ?>
                 </ul>
             </div> <!-- Container Full End -->
         </section>  <!-- Portfolio Section End -->
-        <?php            
-            foreach ($resultProgramI as $currentProgramI){
-                echo '<div class="modal fade" id="info'.$currentProgramI->idProgram.'" role="dialog">
-                   <div class="modal-dialog">                       
-                       <div class="modal-content">
-                           <div class="modal-header">
-                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                               <h4 class="modal-title">'.$currentProgramI->name.'</h4>
-                           </div>
-                           <div class="modal-body">
-                               <p text-justify>'.$currentProgramII->description.'</p>
-                           </div>
-                           <div class="modal-footer">
-                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>';
-            }
-       ?>
-
     <div class="clearfix"></div>
-
     <!-- Counter End -->
     <div class="clearfix"></div>
     <section id="video-fact">
@@ -730,10 +706,6 @@
     </a>
 </div>
 <!-- End Back To Top Button -->
-
-
-
-<<<<<<< HEAD
     <!-- Javascript Files
         ================================================== -->
     <!-- initialize jQuery Library -->
@@ -795,62 +767,5 @@
             icon: "Style/images/map1.png"
         });
     </script>
-=======
-<!-- Javascript Files
-    ================================================== -->
-<!-- initialize jQuery Library -->
-
-<!-- initialize jQuery Library -->
-<script type="text/javascript" src="Style/js/jquery.js"></script>
-<!-- Bootstrap jQuery -->
-<script src="Style/js/bootstrap.min.js"></script>
-<!-- Owl Carousel -->
-<script src="Style/js/owl.carousel.min.js"></script>
-<!-- Isotope -->
-<script src="Style/js/jquery.isotope.js"></script>
-<!-- Pretty Photo -->
-<script type="text/javascript" src="Style/js/jquery.prettyPhoto.js"></script>
-<!-- SmoothScroll -->
-<script type="text/javascript" src="Style/js/smooth-scroll.js"></script>
-<!-- Image Fancybox -->
-<script type="text/javascript" src="Style/js/jquery.fancybox.pack.js?v=2.1.5"></script>
-<!-- Counter  -->
-<script type="text/javascript" src="Style/js/jquery.counterup.min.js"></script>
-<script type="text/javascript" src="Style/js/waypoints.min.js"></script>
-<script type="text/javascript" src="Style/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="Style/js/jquery.scrollTo.js"></script>
-<script type="text/javascript" src="Style/js/jquery.easing.1.3.js"></script>
-<!-- PrettyPhoto -->
-<script src="Style/js/jquery.singlePageNav.js"></script>
-<!-- Wow Animation -->
-<script type="js/javascript" src="Style/js/wow.min.js"></script>
-<!-- Google Map  Source -->
-<script type="text/javascript" src="Style/js/gmaps.js"></script>
-<!-- Custom js -->
-<script src="Style/js/custom.js"></script>
-<script>
-    // Google Map - with support of gmaps.js
-    var map;
-    map = new GMaps({
-        div: '#map',
-        lat: 23.709921,
-        lng: 90.407143,
-        scrollwheel: false,
-        panControl: false,
-        zoomControl: false,
-    });
-
-    map.addMarker({
-        lat: 23.709921,
-        lng: 90.407143,
-        title: 'Themeturn',
-        infoWindow: {
-            content: '<p> ThemeTurn, Dhanmondhi 27</p>'
-        },
-        icon: "Style/images/map1.png"
-    });
-</script>
->>>>>>> michael
-
 </body>
 </html>

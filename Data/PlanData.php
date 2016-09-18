@@ -12,6 +12,7 @@ class PlanData extends Data{
     
     public function getNamePlan(){        
         $conn = mysqli_connect($this->server, $this->user, $this->password, $this->db);
+        $conn->set_charset('utf8');
         $result = mysqli_query($conn, "call getNamePlan");
         $row = mysqli_fetch_array($result);
         $result = ($row['name']); 
@@ -20,6 +21,7 @@ class PlanData extends Data{
     
     public function getInformationPlan(){        
         $conn = mysqli_connect($this->server, $this->user, $this->password, $this->db);
+        $conn->set_charset('utf8');
         $result = mysqli_query($conn, "call getInformationPlan");
         $row = mysqli_fetch_array($result);
         $result = ($row['description']); 
