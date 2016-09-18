@@ -10,7 +10,6 @@
         <title>APROASUR</title>
         <meta name="description" content="">
 
-
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,11 +39,37 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+        <!--inclusions and instances-->
+        <!--inclusions-->
+
+        <!--Daylan Carousel-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 70%;
+                margin: auto;
+            }
+        </style>
+
+        <?php
+        include './Business/OrganizationBusiness.php';
+        include './Business/PlanBusiness.php';
+        include './Business/ProgramBusiness.php';
+        ?>
+        <!--instances-->
+        <?php
+        $organizationBusiness = new OrganizationBusiness();
+        $organization = $organizationBusiness->getOrganization();
+        ?>
     </head>
 
     <body data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner">
+        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner" style="background-color: #A48300">
             <div class="container">
                 <!-- <div class="row"> -->
                 <div class="navbar-header ">
@@ -55,9 +80,8 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="background-color: #ffffff">Daylan Chavarría UCR Michael TCU Test </h4>
+                        <h4 style="color: #fff; font-size: 20px">APROASUR</h4>
                     </a>
-
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right ">
@@ -72,35 +96,46 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
+        <div  id="home" class="container">
 
-        <section id="home" class="hero landing hero-section">
-            <div class="video-background-container">
-                <video preload="auto" autoplay loop muted class="video-background">
-                    <source type="video/mp4" src="Style/videos/gdrive.mp4" />
-                    <source type="video/ogg" src="Style/videos/gdrive.ogv" />
-                    <source type="video/webm" src="Style/videos/gdrive.webm" />
-                </video>
-            </div> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top: 5%">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+                </ol>
 
-            <div class="parallax-overlay"></div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="border: 25px">
+                    <div class="item active" >
+                        <img src="Style/images/carrusel/logo.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                        <h2></h2>
+                    </div>
 
-            <div class="container">
-                <div class="hero-content text-center">
-                    <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
-                        <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.png" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
 
-                    </div><!--/ Hero text end -->
-                </div><!--/ Hero content end -->
-            </div><!--/ Container end -->
-        </section><!--/ Home end -->
-        <!-- Service Area start -->
-        <section id="service">
-            <div class="container">
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
+                </div>
+
+            </div>
+            <br/>
+        </div>
+        <!-- ABOUT US -->
+        <section id="service" style="background-color: #CEF6EC">
+            <div class="container" >
                 <div class="row">
                     <div class="col-md-12">
                         <div class="feature_header text-center">
-                            <h3 class="feature_title">Our <b>Services</b></h3>
-                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Iusto provident non voluptatibus animi quidem incidunt eum, eligendi doloribus dicta.</h4>
+                            <h3 class="feature_title">APROASUR <b>Costa Rica</b></h3>
+                            <h4 class="feature_sub">
+                                <?php echo substr($organization->history, 0, 667); ?> 
+                            </h4>
                             <div class="divider"></div>
                         </div>
                     </div>  <!-- Col-md-12 End -->
@@ -109,34 +144,35 @@
                     <div class="main_feature text-center">
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-history"></i>
-                                <h5>Lightweight</h5>
-                                <p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class=" glyphicon glyphicon-flag"></i>
+                                <h5>Misión</h5>
+                                <!--<p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>-->
+                                <p><?php echo substr($organization->mission, 0, 102) . '...'; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->mission, 0, 1100) . "','" . "Misión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-pencil"></i>
-                                <h5>Beautiful Typrography</h5>
-                                <p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-eye"></i>
+                                <h5>Visión</h5>
+                                <p><?php echo substr($organization->view, 0, 113) . '...'; ?></p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->view, 0, 1100) . "','" . "Visión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-cog"></i>
-                                <h5>Full time Support</h5>
-                                <p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you wonâ€™t be outdated anytime soon. Really!! </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-history"></i>
+                                <h5>Historia</h5>
+                                <p><?php echo substr($organization->history, 0, 95) . '...'; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->history, 0, 667) . "','" . "Historia" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="feature_content">
-                                <i class="fa fa-desktop"></i>
-                                <h5>Ultra Responsive</h5>
-                                <p>Shadow is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>
-                                <button class="btn btn-main"> Read More</button>
+                                <i class="fa fa-users "></i>
+                                <h5>Comisión</h5>
+                                <p><?php echo substr($organization->comission, 0, 90) . "..."; ?> </p>
+                                <button onclick="<?php echo "modalSelect('" . substr($organization->comission, 0, 800) . "','" . "Comisión" . "')"; ?>" type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal">Leer más</button>
                             </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <!-- <button class="btn btn-main"> Read More</button> -->
@@ -144,8 +180,26 @@
                 </div>  <!-- Row End -->
             </div>  <!-- Container End -->
         </section>
-        <!-- Service Area End -->
-
+        <!-- About Us Area End -->
+        <!-- Modal for more information in about us-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">#</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-message">#</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
         <!-- Portfolio works Start -->
 
         <section id="portfolio">
@@ -153,170 +207,91 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="feature_header text-center">
-                            <h3 class="feature_title">Our <b>Works</b></h3>
-                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
-                            <div class="divider"></div>
+                            <?php
+                            $planBusiness = new PlanBusiness();
+                            $resultName = $planBusiness->getNamePlan();
+                            echo '<h3 class="feature_title">' . $resultName . '</h3>';
+                            ?>                            
+                            <h4 class="feature_sub">
+                                <?php
+                                $resultInformation = $planBusiness->getInformationPlan();
+                                echo '<p class="text-justify">' . $resultInformation . '</p>';
+                                ?> </h4>
+                            <div class="divider "></div>
                         </div>
                     </div>  <!-- Col-md-12 End -->
                 </div>
             </div>
 
-
             <div id="isotope-filter" class="skew3 text-center">
-                <a data-filter="*"  href="#" class="active ">All</a>
-                <a data-filter=".identity"  href="#" class="">Identity</a>
-                <a data-filter=".web-design" href="#"  class="">Web Design</a>
-
+                <a data-filter="*"  href="#" class=" ">Todos</a>
+                <a data-filter=".identity"  href="#" class="">I Etapa</a>
+                <a data-filter=".web-design" href="#"  class="">II Etapa</a>               
             </div>
             <div class="clearfix"></div>
             <div class="text-center ">
                 <ul class="portfolio-wrap" id="portfolio_items">
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio identity web-design">
-                        <figure>
-                            <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p1.jpg" data-rel="prettyPhoto" >
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
 
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio logo graphic">
-                        <figure>
-                            <img src="Style/images/portfolio/p2.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p2.jpg"  data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio graphic logo">
-                        <figure>
-                            <img src="Style/images/portfolio/p3.jpg" alt="" class="img-responsive"/>
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p3.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio web-design identity">
-                        <figure>
-                            <img src="Style/images/portfolio/p7.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p7.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio logo web-design">
-                        <figure>
-                            <img src="Style/images/portfolio/p5.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p5.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio logo graphic">
-                        <figure>
-                            <img src="Style/images/portfolio/p6.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p6.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio graphic identity">
-                        <figure>
-                            <img src="Style/images/portfolio/p3.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p3.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio web-design graphic">
-                        <figure>
-                            <img src="Style/images/portfolio/p7.jpg" alt="" class="img-responsive" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="Presentation/portafolio-single.php"> <i class="fa fa-link"></i></a>
-                                    <a href="Style/images/portfolio/p7.jpg" data-rel="prettyPhoto">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
+                    <?php
+                    $programBusiness = new ProgramBusiness();
+                    $resultProgramI = $programBusiness->getInformationProgramI();
+                    foreach ($resultProgramI as $currentProgramI) {
+                        echo '
+                            <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio identity ">
+                                <figure>
+                                    <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
+                                    <figcaption>
+                                        <p class="links">                                    
+                                             <a data-toggle="modal" data-target="#info' . $currentProgramI->idProgram . '"> 
+                                                <i class="fa fa-link"></i></a>                                        
+                                        </p>
+                                         <p style="color: #ffffff;">' . $currentProgramI->name . '</p>
+                                    
+                                    </figcaption>
+                                </figure>    
+                            </li>';
+                    }
+                    $resultProgramII = $programBusiness->getInformationProgramII();
+                    foreach ($resultProgramII as $currentProgramII) {
+                        echo '
+                            <li class="col-md-3 col-xs-12 col-sm-6 single-portfolio web-design">
+                                <figure>
+                                    <img src="Style/images/portfolio/p1.jpg" alt="" class="img-responsive"/>                            
+                                    <figcaption>
+                                        <p class="links">                                    
+                                            <a data-toggle="modal" data-target="#info' . $currentProgramII->idProgram . '"> 
+                                                <i class="fa fa-link"></i></a>                                        
+                                        </p>
+                                         <p style="color: #ffffff;">' . $currentProgramII->name . '</p>
+                                    </figcaption>
+                                </figure>      
+                            </li>';
+                        array_push($resultProgramI, $currentProgramII);
+                    }
+                    ?>
                 </ul>
             </div> <!-- Container Full End -->
         </section>  <!-- Portfolio Section End -->
+        <?php
+        foreach ($resultProgramI as $currentProgramI) {
+            echo '<div class="modal fade" id="info' . $currentProgramI->idProgram . '" role="dialog">
+                   <div class="modal-dialog">                       
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                               <h4 class="modal-title">' . $currentProgramI->name . '</h4>
+                           </div>
+                           <div class="modal-body">
+                               <p text-justify>' . $currentProgramII->description . '</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>';
+        }
+        ?>
 
         <div class="clearfix"></div>
 
@@ -329,10 +304,13 @@
                         <div class="landing-video">
                             <div class="video-embed wow fadeIn" data-wow-duration="1s">
                                 <!-- Change the url -->
-                                <iframe src="http://player.vimeo.com/video/95864492?title=0&amp;byline=0&amp;portrait=0&amp;color=8aba56" width="350" height="281" allowfullscreen></iframe>
+                                <!--<iframe src="http://player.vimeo.com/video/95864492?title=0&amp;byline=0&amp;portrait=0&amp;color=8aba56" width="350" height="281" allowfullscreen></iframe>-->
+                                <iframe src="https://player.vimeo.com/video/183091597" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <!--<p><a href="https://vimeo.com/183091597">APROASUR</a><a href="https://vimeo.com">Vimeo</a>.</p>-->
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6">
                         <div class="video-text">
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -340,7 +318,7 @@
                                     <div class="panel-heading p2 active" role="tab" id="headingOne">
                                         <h4 class="panel-title">
                                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Heading One
+                                                APROASUR
                                             </a>
                                         </h4>
                                     </div>
@@ -384,10 +362,8 @@
                 </div><!-- row End -->
             </div>
         </section>
-
-
-
-        <!------------------------------ Galeria --------------------------------->
+        
+        <!------------------------------- Galeria ----------------------------------->
         <!-- Team MEmber Start -->
         <section id="team">
             <div class="container">
@@ -401,12 +377,23 @@
                     </div>  <!-- Col-md-12 End -->
 
                     <div id="owl-demo" class="owl-carousel owl-theme team-items">
+
                         <!--Inicio Item-->
+
                         <div class="item text-center">
                             <div class="single-member">
                                 <div class="overlay-hover">
                                     <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
                                     <div class="overlay-effect">
+
+
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
                                     </div>
                                 </div>
@@ -414,14 +401,90 @@
                                 <h5>Chief Designer</h5>
                             </div>
                         </div>  <!-- item wrapper end -->
-                        <!-- Fin Item -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic2.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic5.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic4.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
 
+                        <!-- Fin Item -->
                     </div>
                 </div>
             </div> <!-- Conatiner Team end -->
         </section>  <!-- Section TEam End -->
-        <!------------------------ Fin de la galeria -------------------------------->
-
+        <!--------------------------------- Fin de la Galeria ---------------------------------->
+        
         <!-- Our Team Members End -->
         <div class="clearfix"></div>
 
@@ -665,23 +728,23 @@
         </div>
         <!-- Footer Area Start -->
 
-        <div class="footer_b">
+        <div class="footer_b" style="background-color: #A48300">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="footer_bottom">
-                            <p class="text-block"> &copy; Copyright reserved to <span>Cyprass </span></p>
+                            <p class="text-block"> &copy; Copyright reserved to APROASUR</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="footer_mid pull-right">
                             <ul class="social-contact list-inline">
                                 <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+    <!--                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-rss"></i></a></li>-->
                                 <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                                <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+    <!--                        <li><a href="#"> <i class=""></i></a></li>
+                                <li><a href="#"> <i class=""></i></a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -706,6 +769,71 @@
     <!-- End Back To Top Button -->
 
 
+
+
+    <!-- Javascript Files
+        ================================================== -->
+    <!-- initialize jQuery Library -->
+
+    <!-- initialize jQuery Library -->
+    <script type="text/javascript" src="Style/js/jquery.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="Style/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="Style/js/owl.carousel.min.js"></script>
+    <!-- Isotope -->
+    <script src="Style/js/jquery.isotope.js"></script>
+    <!-- Pretty Photo -->
+    <script type="text/javascript" src="Style/js/jquery.prettyPhoto.js"></script>
+    <!-- SmoothScroll -->
+    <script type="text/javascript" src="Style/js/smooth-scroll.js"></script>
+    <!-- Image Fancybox -->
+    <script type="text/javascript" src="Style/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Counter  -->
+    <script type="text/javascript" src="Style/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="Style/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="Style/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="Style/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="Style/js/jquery.easing.1.3.js"></script>
+    <!-- PrettyPhoto -->
+    <script src="Style/js/jquery.singlePageNav.js"></script>
+    <!-- Wow Animation -->
+    <script type="js/javascript" src="Style/js/wow.min.js"></script>
+    <!-- Google Map  Source -->
+    <script type="text/javascript" src="Style/js/gmaps.js"></script>
+    <!-- Custom js -->
+    <script src="Style/js/custom.js"></script>
+    <script>
+        //function to update the information modal.
+        function modalSelect(modalMessage, modalTitle) {
+            document.getElementsByClassName("modal-title")[0].textContent = modalTitle;
+            document.getElementsByClassName("modal-message")[0].textContent = modalMessage;
+        }
+        ;
+    </script>
+    <script>
+        var map;
+        map = new GMaps({
+            div: '#map',
+            lat: 23.709921,
+            lng: 90.407143,
+            scrollwheel: false,
+            panControl: false,
+            zoomControl: false,
+        });
+
+        map.addMarker({
+            lat: 23.709921,
+            lng: 90.407143,
+            title: 'Themeturn',
+            infoWindow: {
+                content: '<p> ThemeTurn, Dhanmondhi 27</p>'
+            },
+            icon: "Style/images/map1.png"
+        });
+    </script>
+<<<<<<< HEAD
+=======
 
     <!-- Javascript Files
         ================================================== -->
@@ -744,8 +872,8 @@
         var map;
         map = new GMaps({
             div: '#map',
-            lat: 23.709921,
-            lng: 90.407143,
+            lat: 9.812458,
+            lng: -83.702979,
             scrollwheel: false,
             panControl: false,
             zoomControl: false,
@@ -761,5 +889,8 @@
             icon: "Style/images/map1.png"
         });
     </script>
+
+
+>>>>>>> origin/master
 </body>
 </html>

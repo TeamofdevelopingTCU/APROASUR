@@ -122,7 +122,8 @@ a{
 .feature_sub{
     color:#000;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
+    text-align : justify;
     font-weight: 400;
 }
 
@@ -445,7 +446,7 @@ ul.navbar-nav > .active > a{
 .carousel-indicators li{
     width: 20px !important;
     height: 20px !important;
-    border: 2px solid #FFF !important;
+    border: 2px solid #ffb74d !important;
     margin: 0px !important;
     border-radius: 50%;
 
@@ -561,10 +562,16 @@ ul.navbar-nav > .active > a{
     transition: all 150ms linear 0s;
     letter-spacing: -1px;
 }
-
+.modal-message{
+    font-size: 19px;
+    line-height: 32px;
+    text-align : justify;
+    color: #222;
+}
 .feature_content p{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 32px;
+    text-align : justify;
     color: #222;
 }
 .feature_content a{
