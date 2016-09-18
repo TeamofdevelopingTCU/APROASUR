@@ -40,21 +40,35 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
         <!--inclusions and instances-->
         <!--inclusions-->
+
+        <!--Daylan Carousel-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 70%;
+                margin: auto;
+            }
+        </style>
+
         <?php
-            include './Business/OrganizationBusiness.php';
-            include './Business/PlanBusiness.php';
-            include './Business/ProgramBusiness.php';
+        include './Business/OrganizationBusiness.php';
+        include './Business/PlanBusiness.php';
+        include './Business/ProgramBusiness.php';
         ?>
         <!--instances-->
         <?php
-            $organizationBusiness = new OrganizationBusiness();
-            $organization = $organizationBusiness->getOrganization();
+        $organizationBusiness = new OrganizationBusiness();
+        $organization = $organizationBusiness->getOrganization();
         ?>
     </head>
 
     <body data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner">
+        <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner" style="background-color: #A48300">
             <div class="container">
                 <!-- <div class="row"> -->
                 <div class="navbar-header ">
@@ -65,7 +79,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <h4 style="color: #fff; font-size: 25px">APROASUR</h4>
+                        <h4 style="color: #fff; font-size: 20px">APROASUR</h4>
                     </a>
                 </div><!--Navbar header End-->
                 <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
@@ -81,26 +95,36 @@
             </div><!-- /.container-fluid -->
         </header>
         <!-- Slider start -->
-        <section id="home" class="hero landing hero-section">
-            <div class="video-background-container">
-                <video preload="auto" autoplay loop muted class="video-background">
-                    <source type="video/mp4" src="Style/videos/gdrive.mp4" />
-                    <source type="video/ogg" src="Style/videos/gdrive.ogv" />
-                    <source type="video/webm" src="Style/videos/gdrive.webm" />
-                </video>
-            </div> 
+        <div  id="home" class="container">
 
-            <div class="parallax-overlay"></div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top: 5%">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+                </ol>
 
-            <div class="container">
-                <div class="hero-content text-center">
-                    <div class="hero-text wow fadeIn" data-wow-delay=".8s ">
-                        <img src="Style/images/APROASUR LOGO.png" style="width: 500px; height: 370px; " class="img-responsive center-block">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" style="border: 25px">
+                    <div class="item active" >
+                        <img src="Style/images/carrusel/logo.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                        <h2></h2>
+                    </div>
 
-                    </div><!--/ Hero text end -->
-                </div><!--/ Hero content end -->
-            </div><!--/ Container end -->
-        </section><!--/ Home end -->
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.png" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
+
+                    <div class="item">
+                        <img src="Style/images/carrusel/img2.jpg" alt="Chania" style="width: 50%; height: 60%"/>
+                    </div>
+                </div>
+
+            </div>
+            <br/>
+        </div>
         <!-- ABOUT US -->
         <section id="service" style="background-color: #CEF6EC">
             <div class="container" >
@@ -256,446 +280,465 @@
                         <div class="video-embed wow fadeIn" data-wow-duration="1s">
                             <!-- Change the url -->
                             <iframe src="http://player.vimeo.com/video/95864492?title=0&amp;byline=0&amp;portrait=0&amp;color=8aba56" width="350" height="281" allowfullscreen></iframe>
+        <div class="clearfix"></div>
+
+        <!-- Counter End -->
+        <div class="clearfix"></div>
+        <section id="video-fact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="landing-video">
+                            <div class="video-embed wow fadeIn" data-wow-duration="1s">
+                                <!-- Change the url -->
+                                <!--<iframe src="http://player.vimeo.com/video/95864492?title=0&amp;byline=0&amp;portrait=0&amp;color=8aba56" width="350" height="281" allowfullscreen></iframe>-->
+                                <iframe src="https://player.vimeo.com/video/183091597" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <!--<p><a href="https://vimeo.com/183091597">APROASUR</a><a href="https://vimeo.com">Vimeo</a>.</p>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="video-text">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading p2 active" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                APROASUR
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body p3">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default ">
+                                    <div class="panel-heading  p2" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Heading Two
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body p3">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default ">
+                                    <div class="panel-heading p2" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Heading Three
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body p3">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div><!-- row End -->
+            </div>
+        </section>       
+        <!------------------------------- Galeria ----------------------------------->
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="feature_header text-center">
+                            <h3 class="feature_title">Our <b>Team Members</b></h3>
+                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                            <div class="divider"></div>
+                        </div>
+                    </div>  <!-- Col-md-12 End -->
+
+                    <div id="owl-demo" class="owl-carousel owl-theme team-items">
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic2.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic5.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                        <div class="item text-center">
+                            <div class="single-member">
+                                <div class="overlay-hover">
+                                    <img src="Style/images/team/pic4.jpg" alt="" class="img-responsive">
+                                    <div class="overlay-effect">
+                                        <ul class="social list-inline">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
+                                    </div>
+                                </div>
+                                <h3>John Abraham</h3>
+                                <h5>Chief Designer</h5>
+                            </div>
+                        </div>  <!-- item wrapper end -->
+                    </div>
+                </div>
+            </div> <!-- Conatiner Team end -->
+        </section>  <!-- Section TEam End -->
+        <!--------------------------------- Fin de la Galeria ---------------------------------->        
+        <!-- Our Team Members End -->
+        <div class="clearfix"></div>
+
+        <!-- bLOG Start -->
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="feature_header text-center">
+                            <h3 class="feature_title">Our <b>Blog</b></h3>
+                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                            <div class="divider"></div>
+                        </div>
+                    </div>  <!-- Col-md-12 End -->
+                </div>
+                <div class="row">
+                    <div class="blog-timeline">
+                        <div id="owl-blog" class="owl-carousel owl-theme">
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic3.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic4.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"> <h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic2.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic5.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic1.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic3.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic2.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic4.jpg" alt="" class="img-responsive"></a> 
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic1.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="single_blog">
+                                    <div class="post_img text-center">
+                                        <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic5.jpg" alt="" class="img-responsive"></a>
+                                        <div class="post-date">
+                                            <span>25</span> 6
+                                        </div>
+                                    </div>
+                                    <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
+                                    <ul class="list-inline">
+                                        <li> <i class="fa fa-pencil"></i> John Smith</li>
+                                        <li> <i class="fa fa-comments"></i> 12</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- blog Timeline End -->
+                </div>
+            </div>
+        </section>
+        <!-- bLOG End -->
+        <!-- Conatct Area Start-->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="feature_header text-center">
+                            <h3 class="feature_title">Keep In <b>touch</b></h3>
+                            <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                            <div class="divider"></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="video-text">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading p2 active" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Heading One
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body p3">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+                <div class="row">
+                    <div class="contact_full">
+                        <div class="col-md-6 left">
+                            <div class="left_contact">
+                                <form action="role">
+                                    <div class="form-level">
+                                        <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                                        <span class="form-icon fa fa-user"></span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default ">
-                                <div class="panel-heading  p2" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Heading Two
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body p3">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+                                    <div class="form-level">
+                                        <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
+                                        <span class="form-icon fa fa-envelope-o"></span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default ">
-                                <div class="panel-heading p2" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Heading Three
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body p3">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                    <div class="form-level">
+                                        <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
+                                        <span class="form-icon fa fa-phone"></span>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
+
+                        <div class="col-md-6 right">
+                            <div class="form-level">
+                                <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
+                                <span class="form-icon fa fa-pencil"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-main featured">Submit Now</button>
+                        </div>
                     </div>
-                </div> 
-            </div><!-- row End -->
+                </div>
+            </div>
+        </section>
+
+        <div id="g-map" class="no-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Area Start -->
+
+        <div class="footer_b" style="background-color: #A48300">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer_bottom">
+                            <p class="text-block"> &copy; Copyright reserved to APROASUR</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer_mid pull-right">
+                            <ul class="social-contact list-inline">
+                                <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+    <!--                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-rss"></i></a></li>-->
+                                <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+    <!--                        <li><a href="#"> <i class=""></i></a></li>
+                                <li><a href="#"> <i class=""></i></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Team MEmber Start -->
-    <section id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="feature_header text-center">
-                        <h3 class="feature_title">Our <b>Team Members</b></h3>
-                        <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
-                        <div class="divider"></div>
-                    </div>
-                </div>  <!-- Col-md-12 End -->
-
-                <div id="owl-demo" class="owl-carousel owl-theme team-items">
-                    <div class="item text-center">
-                        <div class="single-member">
-                            <div class="overlay-hover">
-                                <img src="Style/images/team/pic6.jpg" alt="" class="img-responsive">
-                                <div class="overlay-effect">
-                                    <ul class="social list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                </div>
-                            </div>
-                            <h3>John Abraham</h3>
-                            <h5>Chief Designer</h5>
-                        </div>
-                    </div>  <!-- item wrapper end -->
-                    <div class="item text-center">
-                        <div class="single-member">
-                            <div class="overlay-hover">
-                                <img src="Style/images/team/pic1.jpg" alt="" class="img-responsive">
-                                <div class="overlay-effect">
-                                    <ul class="social list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                </div>
-                            </div>
-                            <h3>John Abraham</h3>
-                            <h5>Chief Designer</h5>
-                        </div>
-                    </div>  <!-- item wrapper end -->
-                    <div class="item text-center">
-                        <div class="single-member">
-                            <div class="overlay-hover">
-                                <img src="Style/images/team/pic2.jpg" alt="" class="img-responsive">
-                                <div class="overlay-effect">
-                                    <ul class="social list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                </div>
-                            </div>
-                            <h3>John Abraham</h3>
-                            <h5>Chief Designer</h5>
-                        </div>
-                    </div>  <!-- item wrapper end -->
-                    <div class="item text-center">
-                        <div class="single-member">
-                            <div class="overlay-hover">
-                                <img src="Style/images/team/pic5.jpg" alt="" class="img-responsive">
-                                <div class="overlay-effect">
-                                    <ul class="social list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                </div>
-                            </div>
-                            <h3>John Abraham</h3>
-                            <h5>Chief Designer</h5>
-                        </div>
-                    </div>  <!-- item wrapper end -->
-                    <div class="item text-center">
-                        <div class="single-member">
-                            <div class="overlay-hover">
-                                <img src="Style/images/team/pic4.jpg" alt="" class="img-responsive">
-                                <div class="overlay-effect">
-                                    <ul class="social list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype"></i></a></li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos, maxime ea excepturi veritatis itaque. </p>
-                                </div>
-                            </div>
-                            <h3>John Abraham</h3>
-                            <h5>Chief Designer</h5>
-                        </div>
-                    </div>  <!-- item wrapper end -->
-                </div>
-            </div>
-        </div> <!-- Conatiner Team end -->
-    </section>  <!-- Section TEam End -->
-
-    <!-- Our Team Members End -->
-    <div class="clearfix"></div>
-
-    <!-- bLOG Start -->
-    <section id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="feature_header text-center">
-                        <h3 class="feature_title">Our <b>Blog</b></h3>
-                        <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
-                        <div class="divider"></div>
-                    </div>
-                </div>  <!-- Col-md-12 End -->
-            </div>
-            <div class="row">
-                <div class="blog-timeline">
-                    <div id="owl-blog" class="owl-carousel owl-theme">
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic3.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic4.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"> <h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic2.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic5.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic1.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic3.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic2.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic4.jpg" alt="" class="img-responsive"></a> 
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic1.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="single_blog">
-                                <div class="post_img text-center">
-                                    <a href="Presentation/blog-single.php"><img src="Style/images/blog/pic5.jpg" alt="" class="img-responsive"></a>
-                                    <div class="post-date">
-                                        <span>25</span> 6
-                                    </div>
-                                </div>
-                                <a href="Presentation/blog-single.php"><h4>Lorem ipsum dolor sit amet</h4></a>
-                                <ul class="list-inline">
-                                    <li> <i class="fa fa-pencil"></i> John Smith</li>
-                                    <li> <i class="fa fa-comments"></i> 12</li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus provident quae maxime consequuntur atque.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- blog Timeline End -->
-            </div>
-        </div>
-    </section>
-    <!-- bLOG End -->
-
-
-    <!-- Conatct Area Start-->
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="feature_header text-center">
-                        <h3 class="feature_title">Keep In <b>touch</b></h3>
-                        <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
-                        <div class="divider"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="contact_full">
-                    <div class="col-md-6 left">
-                        <div class="left_contact">
-                            <form action="role">
-                                <div class="form-level">
-                                    <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
-                                    <span class="form-icon fa fa-user"></span>
-                                </div>
-                                <div class="form-level">
-                                    <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
-                                    <span class="form-icon fa fa-envelope-o"></span>
-                                </div>
-                                <div class="form-level">
-                                    <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
-                                    <span class="form-icon fa fa-phone"></span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 right">
-                        <div class="form-level">
-                            <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
-                            <span class="form-icon fa fa-pencil"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-main featured">Submit Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="g-map" class="no-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="map" id="map"></div>
-            </div>
-        </div>
+    <!-- Footer Area End -->
+    <!-- Back To Top Button -->
+    <!--  <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+             <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+         </div> -->
+    <div id="back-top">
+        <a href="#slider_part" class="scroll" data-scroll>
+            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
+        </a>
     </div>
-    <!-- Footer Area Start -->
-
-    <div class="footer_b">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer_bottom">
-                        <p class="text-block"> &copy; Copyright reserved to <span>Cyprass </span></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer_mid pull-right">
-                        <ul class="social-contact list-inline">
-                            <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer Area End -->
-
-
-
+    <!-- End Back To Top Button -->
 <!-- Back To Top Button -->
 <!--  <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
          <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
